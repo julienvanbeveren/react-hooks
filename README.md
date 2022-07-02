@@ -22,7 +22,7 @@ import { useHookName} from '@julienvanbeveren/hooks'
 ### Hooks
 | hook | guide | description |
 |--|--|--|
-| useDebounce | [useDebounce.md](https://github.com/julienvanbeveren/react-hooks/docs/useDebounce.mdhttps://github.com/julienvanbeveren/react-hooks/blob/main/docs/useDebounce.md) | a hook built on useEffect, that allows you to debounce your function in milliseconds |
+| useDebounce | [useDebounce.md](https://github.com/julienvanbeveren/react-hooks/blob/main/docs/useDebounce.md) | a hook built on useEffect, that allows you to debounce your function in milliseconds |
 
 
 ## Contributing
