@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julienvanbeveren/custom-hooks.git"
+    "url": "git+https://github.com/julienvanbeveren/react-hooks.git"
   },
   "author": "Julien Van Beveren",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julienvanbeveren/custom-hooks/issues"
+    "url": "https://github.com/julienvanbeveren/react-hooks/issues"
   },
-  "homepage": "https://github.com/julienvanbeveren/custom-hooks#readme",
+  "homepage": "https://github.com/julienvanbeveren/react-hooks#readme",
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-react": "^7.17.12",

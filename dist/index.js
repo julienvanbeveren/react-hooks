@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.usePreviousState=function(){};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react");exports.usePrevState=function(t){const[r,u]=e.useState(t),[s,o]=e.useState(void 0);return[r,s,function(e){o(r),u(e)}]};

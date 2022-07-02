@@ -1,1 +1,1 @@
-export declare function usePreviousState(): void;
+export declare function usePrevState(initialValue?: any): any[];
