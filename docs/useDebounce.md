@@ -17,7 +17,7 @@ useDebounce(() => {
 	//function here
 }, [dependencies], delay)
 ```
-The callback inside the useDebounce hook will execute as soon as none of the dependencies have changed for longer than the delay. As long is dependencies keep changing, nothing will get executed.
+The callback inside the useDebounce hook will execute as soon as none of the dependencies have changed for longer than the delay. As long as dependencies keep changing, nothing will get executed.
 
 ---
 [All hooks](https://github.com/julienvanbeveren/react-hooks)
