@@ -1,19 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { usePrevState, usePersistentState, useLocalStorage } from '../hooks'
+import { useDebounce, usePersistentState, useLocalStorage } from '../hooks'
 
 const stories = storiesOf('useHookTest', module)
 
 stories.add('useHook', () => {
 
-    const [testState, setTestState] = useLocalStorage('thisIsKey', 'testtest')
+    const [input, setInput] = useState('')
+    const [debouncedValue, setDebouncedValue] = useState('')
 
+    useDebounce(() => {
+        setDebouncedValue(input)
+    }, [input], 200)
 
     return (
         <>
-            <input type="text" defaultValue={testState} onChange={e => setTestState(e.target.value)}/>
-            <div>{testState}</div>
+            <input type="text" defaultValue={input} onChange={e => setInput(e.target.value)}/>
+            <div>{debouncedValue}</div>
         </>
     )
 })
