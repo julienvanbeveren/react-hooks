@@ -1,25 +1,18 @@
 import React, { useEffect } from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { usePrevState } from '../hooks/usePrevState'
+import { usePrevState, usePersistentState } from '../hooks'
 
 const stories = storiesOf('useHookTest', module)
 
 stories.add('useHook', () => {
 
-    const [testState, prevTestState, setTestState] = usePrevState()
-
-    useEffect(() => {
-        setTestState('test')
-    }, [])
-
-    useEffect(() => {
-        console.log('state:' + testState)
-        console.log('prevSate:' + prevTestState)
-    }, [testState])
+    const [testState, setTestState] = usePersistentState('thisIsKey', 'testtest')
 
 
     return (
-    <div onClick={() => {setTestState('test2')}}>click me</div>
+        <>
+            <input type="text" defaultValue={testState} onChange={e => setTestState(e.target.value)}/>
+        </>
     )
 })
