@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 
-export function useThrottle(callback: () => any, dependency: [any], delay: number) {
+export function useThrottle(callback: () => any, dependency: any[], delay: number) {
 
     const [shouldWait, setShouldWait] = useState(false)
     let waitingCallback = useRef<(() => any) | null>(null)
