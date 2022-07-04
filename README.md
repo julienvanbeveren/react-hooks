@@ -1,3 +1,5 @@
+[![NPM version](https://img.shields.io/npm/v/favicons.svg)](https://www.npmjs.org/package/favicons)
+
 <h1 align="center">React Hooks</h1>
 
 > A library of custom hooks for React.js
