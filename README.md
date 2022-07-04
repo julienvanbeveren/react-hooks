@@ -1,4 +1,5 @@
-[![NPM version](https://img.shields.io/npm/v/favicons.svg)](https://www.npmjs.org/package/favicons)
+[![NPM version](https://img.shields.io/npm/v/@julienvanbeveren/hooks)](https://www.npmjs.org/package/@julienvanbeveren/hooks)
+[![NPM downloads](https://img.shields.io/npm/dm/@julienvanbeveren/hooks)](https://www.npmjs.org/package/@julienvanbeveren/hooks)
 
 <h1 align="center">React Hooks</h1>
 
