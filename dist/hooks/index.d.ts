@@ -8,3 +8,4 @@ export { useScreen } from './useScreen';
 export { useInitialRender } from './useInitialRender';
 export { useNoInitialRender } from './useInitialRender';
 export { useFetch } from './useFetch';
+export { useScript } from './useScript';
