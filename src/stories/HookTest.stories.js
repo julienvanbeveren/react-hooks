@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { useDebounce, useThrottle, useScreen } from '../hooks'
+import { useDebounce, useThrottle, useScreen, useFetch } from '../hooks'
 
 const stories = storiesOf('useHookTest', module)
 
 stories.add('useHook', () => {
 
-    const { screen, width } = useScreen(
-        [
-            { name: 'default', maxWidth: 1000, minWidth: 500 },
-            { name: 'mobile', maxWidth: 500 }
-        ]
-    )
+    const { loading, error, data } = useFetch('https://raw.githubusercontent.com/julienvanbeveren/react-datetime-picker/master/tsconfig.json')
 
-    if (screen == 'mobile') {
-        return <>mobile device</>
+    if (loading) {
+        return <>loading</>
     }
 
+    if (error) {
+        console.log(error)
+        return <>error</>
+    }
+
+    console.log(data)
     return (
         <>
         default render
